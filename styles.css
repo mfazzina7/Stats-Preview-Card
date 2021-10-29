@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(233, 47%, 7%);
+}
+.card {
+  margin: 80px 30px;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  height: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0px 0px;
+  opacity: 0.4;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 0 35px;
+  text-align: center;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  padding: 30px 0;
+}
+
+h2 {
+  padding-top: 25px;
+}
+
+h1,
+h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+.stats {
+  margin-bottom: 2px;
+}
+.stats p {
+  text-transform: uppercase;
+  padding-top: 5px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media (min-width: 800px) {
+  .container {
+    height: 100vh;
+  }
+  .card {
+    display: flex;
+    width: 75vw;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: auto;
+  }
+
+  .card-text {
+    order: -1;
+    width: 50vw;
+    height: 100%;
+    padding: 30px 120px;
+    text-align: start;
+  }
+
+  img {
+    width: 50vw;
+    object-fit: contain;
+  }
+
+  .stats {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}
